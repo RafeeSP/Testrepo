@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Sample</title>
+    <style>
+        #de {
+            color:green ;
+            display:flex;
+             justify-content: center;
+             padding-top:200px;
+              align-items:center;
+        }
+        #inp {
+            display:flex;
+            margin-left:20px;
+            height:30px;
+            align-items:center;
+        }
+        
+        #but{
+            display:flex;
+            justify-content:center;
+            margin:10px;
+            height:30px;
+            margin-right:35px;
+        }
+        
+        #txt {
+              display:flex;
+            justify-content:center;
+            margin-top:50px;
+            font-size:6em;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="de">
+    <p>Enter name : </p>
+    <input type="text" id="inp"/>
+       
+    </div>
+  <div id="but">
+        <button type="submit" onclick="btnclick()"> Click Me!</button>
+    </div>
+    <p id="txt"></p>
+    
+   
+   
+</body>
+ <script>
+    function btnclick() {
+        String name=document.getElementById("inp").value;
+        document.getElementById("txt").innerHTML =  "hi "+name;
+}
+</script>
+</html>
